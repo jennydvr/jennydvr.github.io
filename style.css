@@ -1,0 +1,365 @@
+html
+{
+    background-color: #efefef;
+}
+
+body
+{
+    margin: 0px;
+}
+
+#header
+{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(124, 89, 93);
+    letter-spacing: 3px;
+    color: white;
+    padding: 10px;
+    line-height: 35px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#title
+{
+    float: left;
+    text-align: center;
+}
+
+#title a
+{
+    color: white;
+    text-decoration: none;
+}
+
+#title h1
+{
+    display: inline;
+    font-size: 21px;
+    margin: 0px;
+}
+
+#title p
+{
+    display: inline;
+    font-size: 21px;
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#title h2
+{
+    display: inline;
+    font-size: 15px;
+    margin: 0px;
+}
+
+#menu
+{
+    float: right;
+    text-align: center;
+    font-size: 13px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+#menu a
+{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding-bottom: 5px;
+}
+
+#menu a > span
+{
+    display: inline;
+    visibility: visible;
+}
+
+#menu a > i
+{
+    display: none;
+    visibility: hidden;
+    font-size: 22px;
+}
+
+#menu a.selected
+{
+    border-bottom: 1px solid;
+}
+
+#menu a:hover
+{
+    color: rgb(248, 212, 212);
+}
+
+.content
+{
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+    margin-top: 65px;
+    padding: 30px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.content a
+{
+    color: rgb(124, 89, 93);
+    text-decoration: none;
+    padding-bottom: 3px;
+    line-height: 25px;
+}
+
+.content a:hover > span
+{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+.content a.text-link:hover
+{
+    border-bottom: 1px solid;
+    padding-bottom: 3px;
+}
+
+.content i
+{
+    color: rgb(124, 89, 93);
+    padding-right: 10px;
+    font-size: 22px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+}
+
+.content h3
+{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(124, 89, 93);
+}
+
+.content li
+{
+    list-style: none;
+}
+
+.content li:before
+{
+    color: rgb(124, 89, 93);
+    content: "\f105";
+    font-family: "FontAwesome";
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+  
+#main:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#about
+{
+    width: auto;
+    overflow: hidden;
+}
+
+#contact
+{
+    float: right;
+    width: 25%;
+    min-width: 230px;
+}
+
+#contact li
+{
+    line-height: 35px;
+}
+
+#contact li:before
+{
+    content: "";
+    width: 0px;
+    height: 0px;
+    margin-right: 0px;
+}
+
+#details:after
+{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+#details .detail-col
+{
+    width: 50%;
+    float: left;
+}
+
+.xp
+{
+    margin: 0px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+}
+
+.xp h4
+{
+    margin: 0px;
+    line-height: 35px;
+}
+
+.xp p
+{
+    margin: 0px;
+    line-height: 32px;
+}
+
+.xp a
+{
+    color: black;
+}
+
+#projects-container
+{
+    display: table;
+    width: 100%;
+}
+
+.project
+{
+    display: table-row;
+}
+
+.project-description
+{
+    display: table-cell;
+    vertical-align: top;
+    width: 58%;
+    padding-right: 2%;
+}
+
+.project-video
+{
+    display: table-cell;
+    width: 40%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.project-video iframe
+{
+    width: 448px;
+    height: 252px;
+}
+
+@media screen and (max-width: 660px)
+{
+    #main
+    {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    
+    #menu a > span
+    {
+        display: none;
+        visibility: hidden;
+    }
+
+    #menu a > i
+    {
+        display: inline;
+        visibility: visible;
+    }
+
+}
+
+@media screen and (max-width: 800px)
+{
+    #details:after
+    {
+        display: none;
+        content: "";
+        clear: both;
+    }
+
+    #details .detail-col
+    {
+        width: 100%;
+        float: none;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    #projects-container
+    {
+        display: block;
+        width: 100%;
+    }
+    
+    .project
+    {
+        display: block;
+    }
+    
+    .project-description
+    {
+        display: block;
+        width: 100%;
+        padding-right: 0%;
+    }
+    
+    .project-video
+    {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .project-video
+    {
+        display: block;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 0px;
+    }
+
+    .project-video iframe
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 550px)
+{
+    #title p
+    {
+        display: none;
+    }
+    
+    #title h2
+    {
+        display: none;
+    }
+}

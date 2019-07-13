@@ -261,7 +261,7 @@ body
     height: 252px;
 }
 
-@media screen and (max-width: 660px)
+@media screen and (max-width: 700px)
 {
     #main
     {
